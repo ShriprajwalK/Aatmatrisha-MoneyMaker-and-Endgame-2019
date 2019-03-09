@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta http-equiv="refresh" content="5"/>
+<style>
+.center {
+  margin: auto;
+  width: 60%;s
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style>
+
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+
+
+<link rel="stylesheet" href="bootstrap.min.css" >
+
+
+<script type="text/javascript" src="canvasjs.min.js"></script>
+<script type="text/javascript">
+    window.onload = function() {
+        var dataPoints = [];
+	 
+        function getDataPointsFromCSV(csv, r) {
+            var dataPoints = csvLines = points = [];
+            csvLines = csv.split(/[\r?\n|\r|\n]+/);         
+		var ctr = 0; 
+            for (var i = r; i < csvLines.length; i+=16)
+                if (csvLines[i].length > 0) {
+                    points = csvLines[i].split(",");
+                    dataPoints.push({ 
+                        x: parseFloat(ctr), 
+                        y: parseFloat(points[1]) 		
+                    });
+			ctr+=5;
+                }
+            return dataPoints;
+        };
+	
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company0", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 0)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+	
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company1", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 1)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+	
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company2", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 2)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company3", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 3)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company4", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 4)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company5", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 5)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company6", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 6)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company7", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 7)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company8", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 8)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company9", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 9)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company10", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 10)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company11", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 11)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company12", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 12)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company13", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 13)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company14", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 14)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+	$.get("scrape_info.txt", function(data) {
+	    var chart = new CanvasJS.Chart("company15", {
+		    title: {
+		         text: "",
+		    },
+		    data: [{
+		         type: "line",
+		         dataPoints: getDataPointsFromCSV(data, 15)
+		      }]
+	     });
+		
+	      chart.render();
+
+	});
+
+  }
+
+function pageScroll()
+{
+window.scrollBy(0,1);
+scrolldelay = setTimeout(pageScroll,10);
+}
+pageScroll();
+</script>
+</head>  
+<body>
+<br>
+
+
+
+
+<a name="top"></a>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Stark Industries Share Value</span></center>
+	<br>
+	<div id="company0" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+
+  </div>
+</div>
+</centre>
+<br>
+
+
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Wayne Enterprises Share Value</span></center>
+	<br>
+	<div id="company1" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+
+<br>
+
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Daily Planet Share Value</span></center>
+	<br>
+	<div id="company2" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+
+
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Big Belly Burger Share Value</span></center>
+	<br>
+	<div id="company3" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Lex Corp Industries Share Value</span></center>
+	<br>
+	<div id="company4" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Parker Industries Share Value</span></center>
+	<br>
+	<div id="company5" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Queen Consolidated Share Value</span></center>
+	<br>
+	<div id="company6" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Oscorp Share Value</span></center>
+	<br>
+	<div id="company7" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">S.H.I.E.L.D Share Value</span></center>
+	<br>
+	<div id="company8" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Xavier Funds Share Value</span></center>
+	<br>
+	<div id="company9" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Ramon Industries Share Value</span></center>
+	<br>
+	<div id="company10" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Banner Chemical Industry Share Value</span></center>
+	<br>
+	<div id="company11" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Wakanda Corporation Share Value</span></center>
+	<br>
+	<div id="company12" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Nonsense Company Share Value</span></center>
+	<br>
+	<div id="company13" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Strange Company Share Value</span></center>
+	<br>
+	<div id="company14" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<center>
+<div class="card" style = " width: 90%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="card-body">
+    <center><span class="badge badge-pill badge-primary" style = "font-size: 300%;">Murdork Funds Share Value</span></center>
+	<br>
+	<div id="company15" style="width:100%; height:500px"></div> 
+	<br> 
+<br>
+  </div>
+</div>
+</centre>
+<br>
+<!--
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+-->
+<a href="#top">Back to top</a>
+<br>
+
+
+<script src="bootstrap.min.js"></script>
+
+</body>
+</html>
